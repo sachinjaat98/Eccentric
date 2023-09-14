@@ -1,6 +1,6 @@
-# Final Year Project
+# Text Recognition System with Multilingual Voice Conversion
 
-## Text Recognition System with Multilingual Voice Conversion
+### Final Year Project
 
 
 ### Team Members
