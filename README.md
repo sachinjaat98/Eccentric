@@ -24,8 +24,7 @@ Raspberry pi is a device that contains several important functions on a single c
 The Raspberry Pi camera module size is 25mm square, 5MP sensor much
 smaller than the Raspberry Pi computer, to which it connects by a flat flex
 cable (FFC, 1mm pitch, 15 conductor, and type B )
-![raspi](https://github.com/sachinjaat98/Eccentric/assets/56782045/981f3a5f-e51c-46c7-b580-debf3e693930)
-![Raspberry_pi_camera_8MP_5MP_1200x1200](https://github.com/sachinjaat98/Eccentric/assets/56782045/71e408da-5c7e-4df4-92c6-2e14a9c90efc)
+
 
 ## Software Specifications
 
