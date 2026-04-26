@@ -31,8 +31,8 @@ This application automates language translation and voice conversion to overcome
 
 | Name | Role |
 |------|------|
-| Sachin Kumar | - |
-| Shivani Sachan | - |
+| Sachin Kumar | Lead |
+| Shivani Sachan | Lead |
 | Ritika | - |
 | Prem Kumar Sharma | - |
 | Anmol Guleri | - |
