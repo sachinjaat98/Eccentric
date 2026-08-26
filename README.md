@@ -1,4 +1,44 @@
-# Text Recognition System with Multilingual Voice Conversion
+# Eccentric — OCR, Translation, and Speech API
+
+> The original college prototype has been modernized into a deployable web API. The old interactive scripts remain for reference; production development happens in `src/eccentric/`.
+
+## Quick start
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
+pip install -e ".[dev]"
+python main.py --debug
+```
+
+The API is then available at `http://127.0.0.1:8000`.
+
+| Endpoint | Purpose |
+| --- | --- |
+| `GET /health` | Liveness and version check |
+| `POST /api/v1/ocr` | Multipart image in `image`; optional `language` (Tesseract code) |
+| `POST /api/v1/translate` | JSON: `text`, `source_language`, `target_language` |
+| `POST /api/v1/speech` | JSON: `text`, `language`; returns an audio URL |
+
+Example OCR request:
+
+```bash
+curl -F "image=@image0.jpg" -F "language=eng" http://127.0.0.1:8000/api/v1/ocr
+```
+
+Tesseract must be installed on the host for OCR. Translation and speech require internet access because their current providers are Google services. Run production containers with `docker compose up --build`.
+
+## Project layout
+
+```
+src/eccentric/       Application package and provider adapters
+tests/               HTTP contract tests
+main.py              Local development server
+Dockerfile           Production image (Gunicorn + Tesseract)
+compose.yaml         Persistent production service
+```
+
+---
 
 A comprehensive text recognition and translation system that breaks down language barriers through optical character recognition (OCR), text translation, and speech synthesis.
 
