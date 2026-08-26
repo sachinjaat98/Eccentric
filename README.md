@@ -2,6 +2,30 @@
 
 Eccentric is a browser-based OCR, translation, and text-to-speech application. Upload an image, extract its text, translate it, and generate playable speech from one page.
 
+## Project heritage
+
+Eccentric began as a final-year college project: a multilingual text-recognition and voice-conversion system designed to reduce language barriers and improve accessibility. The original prototype combined a Raspberry Pi camera, OCR, translation, and speech output to help people read and understand text in their surroundings.
+
+This modernization keeps that original vision and project history intact while evolving it into a browser-based, deployable application.
+
+### Original team
+
+| Name | Role |
+| --- | --- |
+| Sachin Kumar | Lead |
+| Shivani Sachan | Lead |
+| Ritika | Team member |
+| Prem Kumar Sharma | Team member |
+| Anmol Guleri | Team member |
+
+### Original hardware platform
+
+- Raspberry Pi 3: Broadcom BCM2837, quad-core ARM Cortex-A53 at 1.2 GHz, 1 GB LPDDR2 RAM
+- Raspberry Pi Camera Module: 5 MP, up to 2592 × 1944 resolution
+- Speaker or headphones for voice output
+
+The current web version can run on a normal computer or in Docker, while the legacy scripts remain available as a record of the original Raspberry Pi and OpenCV prototype.
+
 ## Features
 
 - Drag-and-drop image upload with preview
